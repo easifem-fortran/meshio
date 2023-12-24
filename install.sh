@@ -16,10 +16,10 @@ echo "      "
 
 
 if [ -z "${EASIFEM_APP}" ]; then
-  echo "meshio will be installed at ${EASIFEM_APP}/bin/meshio"
-else
   echo "meshio will be installed at ./bin/meshio"
   EASIFEM_APP="./"
+else
+  echo "meshio will be installed at ${EASIFEM_APP}/bin/meshio"
 fi
 
 build_dir=/tmp/easifem/meshio/build
